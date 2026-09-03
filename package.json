@@ -7,17 +7,15 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "@supabase/supabase-js": "^2.39.0",
-    "react-router-dom": "^6.21.0",
-    "react-hot-toast": "^2.4.1",
-    "date-fns": "^3.2.0"
+    "react-hot-toast": "^2.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "mkdir -p src/pages src/lib && cp App.js src/ 2>/dev/null; cp Login.js src/pages/ 2>/dev/null; cp Dashboard.js src/pages/ 2>/dev/null; cp CheckIn.js src/pages/ 2>/dev/null; cp CheckOut.js src/pages/ 2>/dev/null; cp History.js src/pages/ 2>/dev/null; cp Housekeeping.js src/pages/ 2>/dev/null; cp Staff.js src/pages/ 2>/dev/null; cp Inventory.js src/pages/ 2>/dev/null; cp Maintenance.js src/pages/ 2>/dev/null; cp Accounts.js src/pages/ 2>/dev/null; cp Reports.js src/pages/ 2>/dev/null; cp RoomSetup.js src/pages/ 2>/dev/null; cp NightAudit.js src/pages/ 2>/dev/null; cp GuestFolio.js src/pages/ 2>/dev/null; cp ArrivalsToday.js src/pages/ 2>/dev/null; cp AdminPanel.js src/pages/ 2>/dev/null; cp RoomService.js src/pages/ 2>/dev/null; cp supabase.js src/lib/ 2>/dev/null; cp index.css src/ 2>/dev/null; react-scripts build",
     "test": "react-scripts test"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [">0.2%", "not dead"],
     "development": ["last 1 chrome version"]
   }
 }
